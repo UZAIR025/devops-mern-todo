@@ -13,6 +13,7 @@ describe('GET api/tasks', () =>{
         .get('/api/tasks')
         expect( typeof response.body).toBe('object');
         expect( response.body).toHaveProperty('tasks');
+        console.log(response.body.tasks, 'TASKS SEEDED IN TEST DB');
     })
 })
 
